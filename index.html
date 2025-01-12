@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>面试神器</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>冰橙说衣🍊 - 面试练习工具</title> 
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 登录页面 -->
+  <div id="login-container" class="login-container">
+    <h2>❤请输入动态码登录❤</h2>
+    <!-- 新添加的提示文字 -->
+    <p class="info-message">🐬获取密码请添加冰橙老师橙子🍊微信 <strong>18162425380</strong></p>
+    <input type="text" id="login-code" placeholder="请输入动态码">
+    <button id="login-btn">登录</button> 
+    <p id="login-error" class="error-message"></p> 
+  </div> 
+
+  <!-- 面试练习工具页面 -->
+  <div id="camera-container" style="display: none;">
+    <h1>冰橙🍊面试神器</h1>
+
+    <!-- 面试问题生成器 -->
+    <div class="question-box">
+      <h3>面试问题：</h3>
+      <p id="question-text">点击下方按钮生成随机问题</p>
+      <button id="generate-question-btn">生成随机问题</button>
+    </div>
+
+    <!-- 摄像头 -->
+    <video id="video" autoplay playsinline></video>
+
+    <!-- 控制按钮 -->
+    <div class="controls">
+      <button id="start-btn">打开摄像头</button>
+      <button id="stop-btn" disabled>关闭摄像头</button>
+      <button id="record-btn" disabled>开始录制</button>
+      <button id="stop-record-btn" disabled>停止录制</button>
+      <button id="screenshot-btn" disabled>截图</button>
+    </div>
+
+    <!-- 倒计时 -->
+    <div class="countdown">
+      <h3>倒计时设置</h3>
+      <input type="number" id="countdown-input" placeholder="设置倒计时时间（秒）">
+      <button id="countdown-btn">开始倒计时</button>
+      <button id="stop-countdown-btn" disabled>停止计时</button>
+      <h3 id="timer-display">倒计时：--:--</h3>
+    </div>
+    
+    <!-- 历史记录 -->
+    <div id="recording-history" class="history">
+      <h3>历史记录</h3>
+      <ul id="history-list"></ul>
+    </div>
+
+    <!-- 联系方式和二维码 -->
+    <div class="contact-info">
+      <p>🔆武纺北服服装设计考研辅导 + V：18162425380</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
