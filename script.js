@@ -13,7 +13,7 @@ loginBtn.addEventListener('click', async () => {
   }
 
   try {
-    const response = await fetch('http://localhost:3000/verify-code', {
+    const response = await fetch('https://2be3-117-151-107-26.ngrok-free.app/verify-code', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ code: inputCode }),
